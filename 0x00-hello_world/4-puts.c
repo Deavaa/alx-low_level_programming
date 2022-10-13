@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /** 
  * Using the put functio to display text
  */
