@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	char ch = 'a';
-
-	do{
+	c har ch = 'a';
+  
+	do {
 		putchar(ch);
 		ch++;
 
