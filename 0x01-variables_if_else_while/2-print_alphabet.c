@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	c har ch = 'a';
+	char ch = 'a';
   
 	do {
 		putchar(ch);
