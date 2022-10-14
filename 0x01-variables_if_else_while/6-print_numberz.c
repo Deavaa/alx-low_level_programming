@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point 
+ * main - Entry Point
  *
  * Return:0 Alwasy (Sucess)
  */
 
-int main (void)
+int main(void)
 {
-	int x=0;
-	
+	int x = 0;
+
 	while (x < 10)
 	{
-		putchar (x+'0');
+		putchar (x + '0');
 		x++;
 	}
 	putchar ('\n');
