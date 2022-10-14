@@ -8,7 +8,9 @@
 int main(void)
 {
 	char chsmall = 'a';
+
 	char chcaps = 'A';
+
 	do {
 		putchar (chsmall);
 		chsmall++;
