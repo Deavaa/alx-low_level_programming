@@ -9,7 +9,7 @@
 int main(void)
 {
 	char ch = 'a';
-  
+
 	do {
 		putchar(ch);
 		ch++;
