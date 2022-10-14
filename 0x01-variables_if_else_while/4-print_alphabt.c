@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char ch='a';
+	char ch = 'a';
 
 	do {
 		if(ch != 'q' && ch != 'e')
