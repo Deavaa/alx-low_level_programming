@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	char chsmall='a';
-	char chcaps='A';
+	char chsmall = 'a';
+	char chcaps = 'A';
 	do {
 		putchar (chsmall);
 		chsmall++;
-	} while (chsmall<='z');
+	} while (chsmall <= 'z');
 	do {
 		putchar (chcaps);
 		chcaps++;
-	} while (chcaps<='Z');
+	} while (chcaps <= 'Z');
 	putchar('\n');
 	return (0);
 }
