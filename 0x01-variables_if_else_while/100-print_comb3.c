@@ -8,9 +8,11 @@
 
 int main(void)
 {
-	for (char i = '0'; i <= '9'; i++)
+	char i, j;
+
+	for ( i = '0'; i <= '9'; i++)
 	{
-		for(char j = '0'; j <= '9';j++)
+	for( j = '0'; j <= '9';j++)
 		{
 		if(i < j)
 		{
