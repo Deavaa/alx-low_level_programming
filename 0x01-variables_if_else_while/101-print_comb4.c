@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int x,y,z;
+	int x, y, z;
 
 	for (x = '0'; x <= '7'; x++)
 	{
@@ -24,7 +24,7 @@ int main(void)
 				putchar (x);
 				putchar (y);
 				putchar (z);
-				if (! (x == '7' && y == '8' && z == '9'))
+				if (!(x == '7' && y == '8' && z == '9'))
 				{
 					putchar (',');
 					putchar (' ');
