@@ -16,6 +16,10 @@ int main(void)
 		{
 			for (z = '2'; z <= '9'; z++)
 			{
+				if(x == y || x == z || y==z)
+				{
+					continue();
+				}
 				putchar (x);
 				putchar (y);
 				putchar (z);
