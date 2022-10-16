@@ -2,10 +2,11 @@
 
 /**
  *
- * main - Entry Point
+ * main - Entry point
  *
- * Return:0 Always (Success)
+ * Return :0 Always (Success)
  */
+
 int main(void)
 {
 	int x,y,z;
@@ -25,8 +26,8 @@ int main(void)
 				putchar (z);
 				if (! (x == '7' && y == '8' && z == '9'))
 				{
-				putchar (',');
-				putchar (' ');
+					putchar (',');
+					putchar (' ');
 				}
 			}
 		}
@@ -34,5 +35,3 @@ int main(void)
 	putchar ('\n');
 	return (0);
 }
-		
-
