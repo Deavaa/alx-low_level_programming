@@ -16,13 +16,13 @@ int main(void)
 		{
 			for (z = '0'; z <= '9'; z++)
 			{
-				putchar(x);
-				putchar(y);
-				putchar(y);
+				putchar (x);
+				putchar (y);
+				putchar (y);
 				if (!(x == '7' && y == '8'; && z == '9'))
 				{
-				putchar(',');
-				putchar(' ');
+				putchar (',');
+				putchar (' ');
 				}
 			}
 		}
