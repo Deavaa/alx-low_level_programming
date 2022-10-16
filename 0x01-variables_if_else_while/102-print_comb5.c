@@ -10,7 +10,8 @@ int main(void)
 {
 	int i, j;
 
-	int x, y;
+	int x;
+
 for (i = 0; i <= 98; i++)
 	{
 		for (j = 0; j <= 99; j++)
