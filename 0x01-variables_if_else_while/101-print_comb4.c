@@ -18,7 +18,7 @@ int main(void)
 			{
 				if (x == y || x == z || y==z)
 				{
-					continue();
+					continue ();
 				}
 				putchar (x);
 				putchar (y);
