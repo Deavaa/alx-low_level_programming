@@ -3,6 +3,8 @@
 /**
  *
  * main - Entry Point
+ *
+ * Return:0 Always (Success)
  */
 int x,y,z;
  for (x = '0'; x <= '9'; x++)
