@@ -17,10 +17,10 @@ for (i = 0; i <= 98; i++)
 			if (i <= j)
 			{
 				putchar ((char)(i/10));
-				putchar (i%10);
+				putchar ((char)i%10);
 				putchar (' ');
-				putchar (j/10);
-				putchar (j%10);
+				putchar ((char)j/10);
+				putchar ((char)j%10);
 				if (!(i == 98 && j == 99))
 						{
 						putchar (',');
