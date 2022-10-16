@@ -10,13 +10,15 @@ int main(void)
 {
 	int i, j;
 
+	int x, y;
 for (i = 0; i <= 98; i++)
 	{
 		for (j = 0; j <= 99; j++)
 		{
 			if (i <= j)
 			{
-				putchar ((char)(i/10));
+				x=i/10;
+				putchar ((char) x);
 				putchar ((char)i%10);
 				putchar (' ');
 				putchar ((char)j/10);
