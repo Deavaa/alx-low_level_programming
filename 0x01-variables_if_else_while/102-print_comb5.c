@@ -19,11 +19,11 @@ for (i = 0; i <= 98; i++)
 			if (i <= j)
 			{
 				x=i/10;
-				putchar ((char) x);
-				putchar ((char)i%10);
+				putchar (x+'0');
+				putchar (i%10+'0');
 				putchar (' ');
-				putchar ((char)j/10);
-				putchar ((char)j%10);
+				putchar ((char)j/10+'0');
+				putchar ((char)j%10+'0');
 				if (!(i == 98 && j == 99))
 						{
 						putchar (',');
