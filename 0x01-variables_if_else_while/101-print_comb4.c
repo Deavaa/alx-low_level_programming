@@ -6,6 +6,8 @@
  *
  * Return:0 Always (Success)
  */
+int main(void)
+{
 int x,y,z;
  for (x = '0'; x <= '9'; x++)
  {
