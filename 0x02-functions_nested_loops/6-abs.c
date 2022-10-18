@@ -10,8 +10,8 @@ int _abs(int r)
 {
 	if (r < 0)
 	{
-		r = r * -1;
+		return (r * -1);
 	}
-	printf ("%d\n",r);
-	return 0;
+	
+	return r;
 }
