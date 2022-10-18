@@ -3,12 +3,12 @@
 /**
  * main - Entry Point
  *
- * Return Always : 0 (Success)
+ * Return:0 Always (Success)
  */
 
 int main(void)
 {
-	char var[]="_putchar";
+	char var[] = "_putchar";
 	int i;
 
 	for (i = 0; i <= 7; i++)
