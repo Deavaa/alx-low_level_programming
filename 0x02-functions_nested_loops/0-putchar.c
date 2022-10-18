@@ -6,7 +6,7 @@
  * Return Always : 0 (Success)
  */
 
-int mian(void)
+int main(void)
 {
 	char [] var="_putchar";
 	int i;
