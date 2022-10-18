@@ -2,7 +2,7 @@
 
 /**
  * _islower - Entiry Point
- *
+ *c: carry in the value
  * Return: 1 if lowercase else return 0
  */
 
