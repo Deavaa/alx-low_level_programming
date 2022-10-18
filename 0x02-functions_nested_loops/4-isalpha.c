@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha check fo ralphabetic characters
+ * _isalpha - check fo ralphabetic characters
  * @c:bring the value to the function
  * Return:1 if the value is a letter, lowercase or uppercase
  */
