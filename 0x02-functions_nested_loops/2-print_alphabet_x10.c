@@ -2,9 +2,9 @@
 
 /**
  *
- * print_alphabet_x10 return void
+ *  print_alphabet_x10 - return void
  *
- * Return noting
+ * Return : noting
  */
 
 void print_alphabet_x10(void)
