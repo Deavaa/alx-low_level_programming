@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * jack_bauer : print ever minute of the day of jack Bauer
+ * jack_bauer - print ever minute of the day of jack Bauer
  *
  * Return: noting
  */
 
 void jack_bauer(void)
 {
-	int i,j;
-	
+	int i, j;
+
 	for (i = 0; i < 24; i++)
 	{
 		for (j = 0; j < 60; j++)
