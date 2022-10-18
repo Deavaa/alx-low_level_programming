@@ -6,7 +6,7 @@
  * Return:void Always (Success)
  */
 
-print_aplphabet(void)
+void print_aplphabet(void)
 {
 	char ch = 'a';
 
