@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry Point
+ * print alphabet - Entry Point
  *
  * Return:0 Always (Success)
  */
 
-int aplphabet(void)
+print_aplphabet(void)
 {
 	char ch = 'a';
 

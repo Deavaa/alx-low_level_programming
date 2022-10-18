@@ -2,5 +2,5 @@
 #define MAIN_H
 
 int _putchar(char c);
-int alphabet(void);
+void print_alphabet(void);
 #endif
