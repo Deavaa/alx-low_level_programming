@@ -3,7 +3,7 @@
 /**
  * print alphabet - Entry Point
  *
- * Return:0 Always (Success)
+ * Return:void Always (Success)
  */
 
 print_aplphabet(void)
@@ -16,6 +16,5 @@ print_aplphabet(void)
 		ch++;
 	}
 	_putchar ('\n');
-	return (0);
 }
 
