@@ -3,7 +3,7 @@
 /**
  * _islower - Entiry Point
  *
- * Return: 1 if lowercase else return 0 
+ * Return: 1 if lowercase else return 0
  */
 
 int _islower(int c)
