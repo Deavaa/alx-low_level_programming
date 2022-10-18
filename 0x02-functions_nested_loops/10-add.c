@@ -2,7 +2,7 @@
 
 /**
  * add - adds two numbers
- *
+ *@i and @j: brings the values to be added
  * Returns : result
  */
 
