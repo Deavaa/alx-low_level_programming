@@ -6,7 +6,7 @@
  * Return:0 Always (Success)
  */
 
-int main(void)
+int aplphabet(void)
 {
 	char ch = 'a';
 
@@ -16,6 +16,6 @@ int main(void)
 		ch++;
 	}
 	_putchar ('\n');
-	return (0)
+	return (0);
 }
 
