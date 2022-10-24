@@ -3,7 +3,7 @@
 /**
  * _strlen - compute the lnegth of a sting
  * @s :bring the string to the funciton
- * Return : the length of the sting
+ * Return: the length of the sting
  */
 
 int _strlen(char *s)
