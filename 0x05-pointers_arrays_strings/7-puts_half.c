@@ -10,13 +10,22 @@ void puts_half(char *str)
 	int i = 0;
 	int j;
 	int len = 0;
+	int hlen;
 	
 	while (str[i] != '\0')
 	{
 		len++;
 		i++;
 	}
-	for (j = len / 2; j < len; j++)
+	if (len % 2 == 0)
+	{
+		hlen = len / 2;
+	}
+	else
+	{
+		hlen = (len - 1) / 2;
+	}
+	for (j = hlen; j < len; j++)
 	{
 		_putchar (str[j]);
 	}
