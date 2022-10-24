@@ -17,13 +17,13 @@ void puts_half(char *str)
 		len++;
 		i++;
 	}
-	if ((len-1) % 2 == 0)
+	if (len % 2 == 0)
 	{
 		hlen = len / 2;
 	}
 	else
 	{
-		hlen = (len - 1) / 2;
+		hlen = ((len - 1) / 2) + 1;
 	}
 	for (j = hlen; j < len; j++)
 	{
