@@ -9,18 +9,17 @@
 char *cap_string(char *ch)
 {
 	int i;
-	char *res;
 
 	for (i = 0; ch[i] != '\0'; i++)
 	{
 		if (ch[i] >= 'a' && ch[i] <= 'z' && (ch[i - 1] == '\n' || ch[i - 1] =='\t' || ch[i - 1] == ' ' || ch[i - 1] == ',' || ch[i - 1] == ';' || ch[i - 1] == '.' || ch[i - 1] == '!' || ch[i - 1] == '?' || ch[i - 1] == '"' ||ch[i - 1] == '(' || ch[i - 1] == ')' || ch[i - 1] == '{' || ch[i - 1] == '}' || i == 0))
 		{
-			res[i] = ch[i] - 32;
+			ch[i] = ch[i] - 32;
 		}
 		else
 		{
-			res[i] = ch[i];
+			ch[i] = ch[i];
 		}
 	}
-	return (res);
+	return (ch);
 }
