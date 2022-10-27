@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * cap_string - capitalize each word  first letter
  * @ch: brings the string to convert
