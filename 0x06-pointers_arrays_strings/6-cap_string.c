@@ -14,7 +14,7 @@ char *cap_string(char *ch)
 
 	for (i = 0; ch[i] != '\0'; i++)
 	{
-		if (ch[i] >= 97 && ch[i] <= 122 && 
+		if (ch[i] >= 'a' && ch[i] <= 'z' && 
 		(ch[i - 1] == '\n' || ch[i - 1] =='\t' || 
 		 ch[i - 1] == ' ' || ch[i - 1] == ',' || 
 		 ch[i - 1] == ';' || ch[i - 1] == '.' || 
@@ -28,6 +28,7 @@ char *cap_string(char *ch)
 		else
 		{
 			res[i] = ch[i];
+		}
 	}
 	return (res);
 }
