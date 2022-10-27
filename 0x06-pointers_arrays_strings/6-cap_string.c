@@ -3,7 +3,6 @@
 /**
  * cap_string - capitalize each word  first letter
  * @ch: brings the string to convert
- *
  * Return: the result string
  */
 
