@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * cap_string - capitalize each word  first letter
  * @ch: brings the string to convert
@@ -7,7 +9,7 @@
 char *cap_string(char *ch)
 {
 	int i;
-	char *res;
+	char *res = {0};
 
 	for (i = 0; ch[i] != '\0'; i++)
 	{
