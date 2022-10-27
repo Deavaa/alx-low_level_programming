@@ -9,7 +9,7 @@ include "main.h"
  * Return: nothing
  */
 
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, temp;
 
@@ -20,3 +20,5 @@ void print_array(int *a, int n)
 		a[n] = temp;
 	}
 }
+
+
