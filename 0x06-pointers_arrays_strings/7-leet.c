@@ -12,8 +12,8 @@ char *leet(char *ch)
 	char li[] = "aAeEoOtTlL";
 	char num[] = "4433007711";
 
-	for(i = 0; ch[i] != '\0'; i++)
-		for(j = 0; li[j] != '\0'; j++)
+	for (i = 0; ch[i] != '\0'; i++)
+		for (j = 0; li[j] != '\0'; j++)
 		{
 			if (ch[i] == li[j])
 			{
