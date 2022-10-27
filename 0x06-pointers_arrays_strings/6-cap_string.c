@@ -17,6 +17,9 @@ char *cap_string(char *ch)
 		{
 			ch[i] = ch[i] - 32;
 		}
+		else
+		{
+			ch[i] = ch[i];
 	}
 	return (ch);
 }
