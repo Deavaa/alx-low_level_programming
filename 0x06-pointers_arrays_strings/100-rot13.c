@@ -17,7 +17,7 @@ char *rot13(char *ch)
 			}
 			else
 			{
-				ch[i] -= 13
+				ch[i] -= 13;
 			}
 	}
 	return (ch);
