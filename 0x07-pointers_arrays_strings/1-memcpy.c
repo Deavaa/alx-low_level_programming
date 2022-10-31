@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _memcpy -copies memory area
+ * _memcpy - copies memory area
  * @dest: destinantion pointer
  * @src: source pointer
  * @n: bytes
  * Return: destination pointer
  */
 
-char *_memcpy(char * dest, char *src, int n)
+char *_memcpy(char *dest, char *src, int n)
 {
 	for (; n > 0; n--)
 	{
