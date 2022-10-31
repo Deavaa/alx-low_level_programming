@@ -3,7 +3,7 @@
 /**
  * _memcpy -copies memory area
  * @dest: destinantion pointer
- * #src: source pointer
+ * @src: source pointer
  * @n: bytes
  * Return: destination pointer
  */
