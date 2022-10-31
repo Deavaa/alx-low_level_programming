@@ -5,7 +5,7 @@
  * @dest: destinantion pointer
  * #src: source pointer
  * @n: bytes
- * Retern: destination pointer
+ * Return: destination pointer
  */
 
 char *_memcpy(char * dest, char *src, int n)
