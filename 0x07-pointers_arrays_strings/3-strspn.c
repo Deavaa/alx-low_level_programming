@@ -23,8 +23,8 @@ unsigned int _strspn(char *s, char *accept)
 			if (!(*--acept))
 			{
 				break;
-				accept = ttxt;
 			}
+				accept = txt;
 			return (c);
 	}
 }
