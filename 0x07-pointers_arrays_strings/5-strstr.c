@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * _strstr - Locates a substring
+ * @haystack: text to be serached
+ * @needle: find occurence
+ * Return: result pointer
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	while (*haystack)
+	{
+		char *i = haystack;
+		char *j = needle;
+
+		while (*j && *haystack == *j)
+		{
+			haystack++;
+			j++;
+		}
+		if (!*j)
+		{
+			return (i);
+		}
+		haystack = j + 1;
+	}
+	return (NULL);
+}
