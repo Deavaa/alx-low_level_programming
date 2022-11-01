@@ -19,7 +19,7 @@ void print_chessboard(char (*a)[8])
 			_putchar (ch[j][k]);
 			if (k != 7)
 			{
-			_putchar (',');
+				_putchar (',');
 			}
 
 		}
