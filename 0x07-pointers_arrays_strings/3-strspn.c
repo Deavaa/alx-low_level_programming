@@ -17,7 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 		while (*accept++)
 			if (*(--s) == *(--accept))
 			{
-				c++;
+				++;
 				break;
 			}
 			if (!(*--acept))
@@ -25,6 +25,6 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 				accept = txt;
-			return (c);
+			return (i);
 	}
 }
