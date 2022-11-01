@@ -10,7 +10,7 @@
 
 char *_memcpy(char *dest, char *src, int n)
 {
-	n--;
+	n = n - 1;
 	for (; n >= 0; n--)
 	{
 		dest[n] = src[n];
