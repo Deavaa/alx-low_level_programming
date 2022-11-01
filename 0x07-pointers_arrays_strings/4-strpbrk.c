@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * _strpbrk -  locates the first occurrence
