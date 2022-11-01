@@ -14,10 +14,12 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
-		while (*haystack && *j && *haystack == *j)
+		while (*needle)
 		{
-			haystack++;
-			j++;
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
 		}
 		if (!*j)
 		{
