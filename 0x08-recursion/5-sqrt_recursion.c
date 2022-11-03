@@ -5,7 +5,6 @@
  * @n: number
  * @val: a value to bested in recursion
  * Return: the reuslt
- * _sqrt_recursion_do - Repeat the action
  */
 
 int _sqrt_recursion_do(int n, int val)
@@ -24,6 +23,9 @@ int _sqrt_recursion_do(int n, int val)
 	}
 }
 
+/**
+ * _sqrt_recursion -repat the action until gets the ruslt
+ */
 int _sqrt_recursion(int n)
 {
 	return (_sqrt_recursion_do(n, 1));
