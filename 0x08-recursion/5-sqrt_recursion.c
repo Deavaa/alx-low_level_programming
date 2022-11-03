@@ -12,7 +12,7 @@ int _sqrt_recursion(int n, int val)
 	if (n < 0)
 		return (-1);
 	else if ((val * val) > n)
-		retirm (-1);
+		return (-1);
 	else if ((val * val) == n)
 		return (val);
 	else
