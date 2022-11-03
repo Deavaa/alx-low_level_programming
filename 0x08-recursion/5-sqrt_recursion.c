@@ -9,12 +9,10 @@
 
 int _sqrt_recursion(int n, int val)
 {
-	if (n < 0)
-		return (-1);
-	else if ((val * val) > n)
+	if (n < 0 || (val * val) > n)
 		return (-1);
 	else if ((val * val) == n)
 		return (val);
 	else
-		return (_sqrt_recursion(n, val++));
+		return (_sqrt_recursion(n, val + 1));
 }
