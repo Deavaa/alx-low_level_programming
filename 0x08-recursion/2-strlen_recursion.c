@@ -7,7 +7,7 @@
  * Return: length of text
  */
 
-int _strlen_p(char *s)
+int _strlen_recursion(char *s)
 {
 	if (!*s)
 	{
@@ -15,6 +15,6 @@ int _strlen_p(char *s)
 	}
 	else
 	{
-		return (1 + _strlen_p(++s));
+		return (1 + _strlen_recursion(++s));
 	}
 }
