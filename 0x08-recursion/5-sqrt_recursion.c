@@ -7,7 +7,7 @@
  * Return: the reuslt
  */
 
-int _sqrt_recursion(int n, int val)
+int _sqrt_recursion_do(int n, int val)
 {
 	if ((val * val) == n)
 	{
@@ -19,11 +19,11 @@ int _sqrt_recursion(int n, int val)
 	}
 	else
 	{
-		return (_sqrt_recursion(n, val + 1));
+		return (_sqrt_recursion_do(n, val + 1));
 	}
 }
 
-int _sqrt_recursion_start(int n)
+int _sqrt_recursion(int n)
 {
-	return (_sqrt_recursion(n, 1));
+	return (_sqrt_recursion_do(n, 1));
 }
