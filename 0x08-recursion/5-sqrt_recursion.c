@@ -24,7 +24,9 @@ int _sqrt_recursion_do(int n, int val)
 }
 
 /**
- * _sqrt_recursion -repat the action until gets the ruslt
+ * _sqrt_recursion_do -repat the action until gets the ruslt
+ * @n: the value ricived
+ * Return: the recursive funcation with test value
  */
 int _sqrt_recursion(int n)
 {
