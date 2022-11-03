@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int factorial - factorial of a number
+ * factorial - factorial of a number
  * @n: get the e input number
  * Return: factorila result;
  */
