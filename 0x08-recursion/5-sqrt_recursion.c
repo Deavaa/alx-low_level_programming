@@ -2,6 +2,7 @@
 
 /**
  * _sqrt_recursion - returns the square root of a number
+ * _sqrt_recursion_do - repeat the action until gets the reuslt
  * @n: number
  * @val: a value to bested in recursion
  * Return: the reuslt
