@@ -6,7 +6,6 @@
  * @s: brings text
  * Return: length of text
  */
-
 int _strlen_recursion(char *s)
 {
 	if (!*s)
