@@ -16,6 +16,6 @@ int main( int argc, char **argv)
 	{
 		*argv[val] = *argv[val];
 	}
-	printf(%d\n, (sum - 1));
+	printf(%d\n, (val - 1));
 	return (0);
 }
