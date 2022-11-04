@@ -1,1 +1,1 @@
-Read me for debugging
+Array and pointers
