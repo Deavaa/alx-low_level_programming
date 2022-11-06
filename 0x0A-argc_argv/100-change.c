@@ -37,19 +37,16 @@ int change(int n)
 
 int main(int argc, char *argv[])
 {
-	int n;
-
+	int number;
 	if (argc != 2)
 	{
-		printf("Error\n");
-		return (1);
+		return (printf("Error\n"), 1);
 	}
-	n = atoi(argv[1]);
-	if (n < 0)
+	number = atoi(argv[1]);
+	if (number < 0)
 	{
-		printf("Error\n");
-		return (1);
+		return (printf("Error\n"), 1);
 	}
-	printf("%d\n", change(n))
-		return (0);
+	printf("%d\n", calculate_cents(number));
+	return (0);
 }
