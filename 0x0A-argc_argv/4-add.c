@@ -10,18 +10,20 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int res = 0;
+	int i, res;
+	sum = 0;
 	
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
-		if (atoi(argv[i]) < '0' || atoi(argv[i]) > '9')
+		if (i > 0)
+		{
+			if (atoi(argv[i]) == 0)
 			{
-				printf("Error\n");
-				return (1);
+				return (printf("Error\n"), 1);
 			}
-			res += atoi(argv[i]);
+			sum += atoi(argv[i]);
+		}
 	}
-	printf("%d\n", res);
+	printf("%d\n", sum);
 	return (0);
 }
