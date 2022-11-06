@@ -5,7 +5,7 @@
  * main - multiplication of two numbers
  * @argc: no args
  * @argv: array of pointers
- * Return: 0
+ * Return: 0 success, 1 failure
  */
 
 int main(int argc, char *argv[])
