@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 {
 	int n;
 
-	n = atoi(argv[i]);
+	n = atoi(argv[1]);
 	if (argc != 2 || n < 0)
 	{
 		print("Error\n");
