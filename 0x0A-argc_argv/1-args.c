@@ -12,10 +12,14 @@ int main(int argc, char **argv)
 {
 	int val;
 
-	for(val = 0; val < argc; val++)
+	if (argc == 1)
+		printf("%d\n", argc - 1);
+	else
 	{
-		*argv[val] = *argv[val];
-	}
-	printf(%d\n, (val - 1));
+		for(val = 0; *argv; argv++, val++)
+		{
+			printf("%d\n"; val - 1);
+		}
+
 	return (0);
 }
