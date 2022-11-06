@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints no. of arguments 
+ * main - prints no. of argu
  * @argc: 1st param
  * @argv: 2nd param
  * Return: 0
@@ -10,16 +10,12 @@
 
 int main(int argc, char **argv)
 {
-	int val;
+	int sum;
 
-	if (argc == 1)
-		printf("%d\n", argc - 1);
-	else
+	for (sum = 0; sum < argc; sum++)
 	{
-		for(val = 0; *argv; argv++, val++)
-		{
-			printf("%d\n"; val - 1);
-		}
-
+		*argv[sum] = *argv[sum];
+	}
+	printf("%d\n", (sum - 1));
 	return (0);
 }
