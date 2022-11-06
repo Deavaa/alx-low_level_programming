@@ -2,33 +2,6 @@
 #include <stdlib.h>
 
 /**
- * change - calculate cent chagne
- * @n: input money
- * Return: change coing
- */
-
-int change(int n)
-{
-	int cent = 0;
-
-	while (n)
-	{
-		if (n >= 25)
-			n -= 25;
-		else if (n >= 10)
-			n -= 10;
-		else if (n >= 5)
-			n -= 5;
-		else if (n >= 2)
-			n -= 2;
-		else if (n >= 1)
-			n -= 1;
-		cent++;
-	}
-	return (cent);
-}
-
-/**
  * main - print the min coin
  * @argc: amount of argu
  * @argv: pointer
@@ -37,11 +10,35 @@ int change(int n)
 
 int main(int argc, char *argv[])
 {
-	int n = atoi(argv[1]);
-	if (argc != 2 || n < 0)
+	int res, n, cent;
+	
+	if (argc != 2)
 	{
-		return (printf("Error\n"), 1);
+		printf("Error\n");
+		return (1);
 	}
-	printf("%d\n", change(n));
+	res = 0;
+	n = atoi(argv[1]);
+	if (n < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	while (n)
+	{
+		if (n >= 25)
+			cent = 25;
+		else if (n >= 10)
+			cent = 10;
+		else if (n >= 5)
+			cent = 5;
+		else if (n >= 2)
+			cent = 2;
+		else
+			cent = 1;
+		res += n / cent;
+		n %= cent;
+	}
+	printf("%d\n", res);
 	return (0);
 }
