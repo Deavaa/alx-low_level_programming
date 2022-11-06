@@ -40,7 +40,12 @@ int main(int argc, char *argv[])
 	int n;
 
 	n = atoi(argv[1]);
-	if (argc != 2 || n < 0)
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if (n < )
 	{
 		printf("Error\n");
 		return (1);
