@@ -37,13 +37,8 @@ int change(int n)
 
 int main(int argc, char *argv[])
 {
-	int n;
-	if (argc != 2)
-	{
-		return (printf("Error\n"), 1);
-	}
-	n = atoi(argv[1]);
-	if (n < 0)
+	int n = atoi(argv[1]);
+	if (argc != 2 || n < 0)
 	{
 		return (printf("Error\n"), 1);
 	}
