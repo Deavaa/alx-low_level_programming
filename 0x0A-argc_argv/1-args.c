@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * main - prints no. of arguments
+ * main - prints no. of arguments 
  * @argc: 1st param
  * @argv: 2nd param
  * Return: 0
  */
 
-int main( int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int val;
 
