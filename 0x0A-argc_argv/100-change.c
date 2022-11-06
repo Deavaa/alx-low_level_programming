@@ -27,3 +27,24 @@ int change(int n)
 	}
 	return (cent);
 }
+
+/**
+ * main - print the min coin
+ * @argc: amount of argu
+ * @argv: pointer
+ * Return: 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int n;
+
+	n = atoi(argv[i]);
+	if (argc != 2 || n < 0)
+	{
+		print("Error\n");
+		return (1);
+	}
+	printf("d\n", change(n))
+		return (0);
+}
