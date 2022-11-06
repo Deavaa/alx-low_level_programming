@@ -10,14 +10,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, j;
 	int res = 0;
 	
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		if (i > 0)
+		for (j = 0; argv[i][j]; j++)
 		{
-			if (atoi(argv[i]) == 0)
+			if (argv[i][j] < '0'|| argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
