@@ -42,9 +42,9 @@ int main(int argc, char *argv[])
 	n = atoi(argv[1]);
 	if (argc != 2 || n < 0)
 	{
-		print("Error\n");
+		printf("Error\n");
 		return (1);
 	}
-	printf("d\n", change(n))
+	printf("%d\n", change(n))
 		return (0);
 }
