@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /**
- *
  * main - prints all argu
  * @argc: 1st param
  * @argv: 2nd param
