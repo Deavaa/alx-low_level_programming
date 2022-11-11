@@ -15,10 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j = n;
 
 	if(s1 == NULL)
-		S1 = "";
+		s1 = "";
 
 	if(s2 == NULL)
-		S2 = "";
+		s2 = "";
 
 	for (i = 0; s1[i]; i++)
 		j++;
@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		news1[j++] = s1[i];
 
 	for (i = 0; s2[i] && i < n; i++)
-		news3[j] = s2[i];
+		news3[j++] = s2[i];
 
 	news3[j] = '\0';
 	return (news3);
