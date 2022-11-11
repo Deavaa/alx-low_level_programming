@@ -16,16 +16,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if(s1 == NULL)
 		S1 = "";
+
 	if(s2 == NULL)
 		S2 = "";
+
 	for (i = 0; s1[i]; i++)
 		j++;
+
 	news3 = malloc(sizeof(char) * (j + 1));
 
 	if (news3 == NULL)
 		return (NULL);
 
-	J = 0;
+	j = 0;
 
 	for (i = 0; s1[i]; i++)
 		news1[j] = s1[i];
