@@ -7,7 +7,7 @@
  * Return: memory pointer
  */
 
-void *malloc_checkedunsigned int b)
+void *malloc_checked unsigned int b)
 {
 	void *mm = malloc(b);
        if (mm == NULL)
