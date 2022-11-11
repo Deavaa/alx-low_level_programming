@@ -9,7 +9,7 @@
  * Return: pointer to the concatenated string location
  */
 
-char *string_nconcatchar *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *news3;
 	unsigned int i, j = n;
