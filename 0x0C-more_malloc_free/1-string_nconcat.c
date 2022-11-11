@@ -27,7 +27,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (news2 == NULL)
 		return (NULL);
-	
+
+	news3[j + 1] = '\0';	
 	for (;j > i; j--, n--)
 		news3[j] = s2[n];
 
