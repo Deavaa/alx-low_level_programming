@@ -14,4 +14,10 @@ struct dog
 	float age;
 	char *owner;
 }
+
+void init_dog(struct dog *dg, char * name, float age, char *owner);
+void print_dog(struct dog *dg);
+typedef struct dog dg_type;
+dg_type *new_dogchar *name, float age, char *owner);
+void free_dog(dg_type *dg);
 #endif
