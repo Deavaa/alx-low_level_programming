@@ -1,4 +1,5 @@
 #include "l_list.h"
+#include <stdlib.h>
 
 /**
  * free_list - free the list
