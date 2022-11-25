@@ -1,20 +1,20 @@
-#ifndef L_LIST_H
-#define L_LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 #include <stdlib.h>
 #include <string.h>
 
 /**
- * strcut l_list -single linked list
+ * strcut list_s -single linked list
  * @str: string
  * @len: string length
  * @next: pinter to next node
  */
 
-typedef struct l_list
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct l_list *next;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
