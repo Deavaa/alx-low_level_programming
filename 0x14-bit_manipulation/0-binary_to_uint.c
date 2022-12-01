@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -24,11 +23,11 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (j = 0; j != i; j++)
 	{
-		if(b[i - j - 1] == '1')
+		if (b[i - j - 1] == '1')
 		{
 			n += 1 << j;
 		}
-		else if(b[i - j - 1] != '0')
+		else if (b[i - j - 1] != '0')
 		{
 			return (0);
 		}
