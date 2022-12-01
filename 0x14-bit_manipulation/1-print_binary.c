@@ -9,10 +9,10 @@
 void print_binary(unsigned long int n)
 {
 	int i = 0;
-	int j = 1;
+	unsigned long int j = 1;
 
 	j <<= 63;
-	if (n > 0)
+	if (n == 0)
 	{
 		_putchar('0');
 	}
