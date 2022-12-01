@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * flip_bits - the number of bits need to flip to get from one number to another
  * @n: number
  * @m: compare
  * Return: no diff
  */
-
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int i = 0;
