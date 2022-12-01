@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	}
 	while (j > 0)
 	{
-		if ((n & j) == 0 && i ==1)
+		if ((n & j) == 0 && i == 1)
 		{
 			_putchar('0');
 		}
