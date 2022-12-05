@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ssize - read and print file
+ * read_textfile - read and print file
  * filename: file name
  * letters: no. of letters
  * Return: letters
