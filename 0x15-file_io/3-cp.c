@@ -2,7 +2,7 @@
 /**
  * print_error - print file close error
  * @file_des: file descriptor
- * Return: None.
+ * Return: nothign
  */
 
 void print_error(int file_des)
@@ -14,7 +14,7 @@ void print_error(int file_des)
 /**
  * main - copies the content
  * @argc: number of command line arg
- * @argv: An array 
+ * @argv: An array
  * Return: 0
  */
 
@@ -26,20 +26,20 @@ int main (int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97); 
+		exit(97);
 	}
 	fp_from = open(argv[1], O_RDONLY);
 	if (argv[1] == NULL || fp_from < 0)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-	exit(98); 
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98); 
 	}
 	fp_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fp_to < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(fp_from);
-		exit(99); 
+		exit(99);
 	}
 	while ((wc = read(fp_from, buffer, 1024)) > 0)
 	{
@@ -54,7 +54,7 @@ int main (int argc, char *argv[])
 	if (wc < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98); 
+		exit(98);
 	}
 	if (close(fp_from) < 0)
 		print_error(fp_from);
