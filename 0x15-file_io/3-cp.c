@@ -2,8 +2,8 @@
 
 /** 
  * main - copies the content
- * @argc: number of argument
- * @argv: array of arguments
+ * @ac: number of argument
+ * @av: array of arguments
  * Return: Always 0 (Success)
  */
 
