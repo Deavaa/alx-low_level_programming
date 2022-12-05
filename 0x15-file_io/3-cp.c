@@ -17,15 +17,16 @@ void print_error(int file_des)
  * @argv: An array 
  * Return: 0
  */
-int main ((int argc, char *argv[])
+
+int main (int argc, char *argv[])
 {
 	int fp_from, fp_to, wc;
 	char buffer[1024];
 
 	if (argc != 3)
 	{
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-	exit(97); 
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97); 
 	}
 	fp_from = open(argv[1], O_RDONLY);
 	if (argv[1] == NULL || fp_from < 0)
