@@ -5,11 +5,12 @@
  * @argv: array of arguments
  * Return: Always 0 (Success)
  */
+
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, x, m, n;
 	char buf[BUFSIZ];
-	
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -47,7 +48,8 @@ int main(int argc, char *argv[])
 		if (n < 0)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
-			exit(100);
 		}
-		return (0);
+		exit(100);
+	}
+	return (0);
 }
