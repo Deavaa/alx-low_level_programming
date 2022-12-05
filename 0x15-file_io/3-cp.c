@@ -1,61 +1,63 @@
 #include "main.h"
-
-/** 
- * main - copies the content
- * @ac: number of argument
- * @av: array of arguments
- * Return: Always 0 (Success)
+/**
+ * print_error - print file close error
+ * @file_des: file descriptor
+ * Return: None.
  */
 
-int main(int ac, char **av)
+void print_error(int file_des)
 {
-	int file_from, file_to;
-	ssize_t  l_read = 1024, l_write, close_file;
-	char content[1024];
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_des);
+	exit(100);
+}
 
-	if (ac != 3)
+/**
+ * main - copies the content
+ * @argc: number of command line arg
+ * @argv: An array 
+ * Return: 0
+ */
+int main ((int argc, char *argv[])
+{
+	int fp_from, fp_to, wc;
+	char buffer[1024];
+
+	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+	exit(97); 
 	}
-	file_from = open(av[1], O_RDONLY);
-	if (file_from == -1)
+	fp_from = open(argv[1], O_RDONLY);
+	if (argv[1] == NULL || fp_from < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
-		exit(98);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+	exit(98); 
 	}
-	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (file_to == -1)
+	fp_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	if (fp_to < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(fp_from);
+		exit(99); 
 	}
-	while (l_read == 1024)
+	while ((wc = read(fp_from, buffer, 1024)) > 0)
 	{
-		l_read = read(file_from, content, 1024);
-		if (l_read == -1)
+		if (wc != write(fp_to, buffer, wc))
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]),
-			exit(98);
-		}
-		l_write = write(file_to, content, l_read);
-		if (l_write == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(fp_from);
+			close(fp_to);
 			exit(99);
 		}
 	}
-	close_file = close(file_from);
-	if (close_file == -1)
+	if (wc < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd  %d\n", file_from);
-		exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98); 
 	}
-	close_file = close(file_to);
-	if (close_file == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd  %d\n", file_to);
-		exit(100);
-	}
+	if (close(fp_from) < 0)
+		print_error(fp_from);
+	if (close(fp_to) < 0)
+		print_error(fp_to);
 	return (0);
 }
